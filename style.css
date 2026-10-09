@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #f2f5f9;
-    color: #222;
+    color: #292;
     text-align: center;
 }
 
@@ -28,7 +28,7 @@ section {
 }
 
 button {
-    background-color: #1769aa;
+    background-color: #1789aa;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -39,4 +39,16 @@ footer {
     background-color: #173b67;
     color: white;
     padding: 15px;
+}
+section {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-3px);
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
