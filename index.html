@@ -6,42 +6,259 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Task 667Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Navigation bar -->
     <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+        <nav class="navbar">
+            <a href="#home" class="logo">Hisham AV<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section id="home">
-        <h2>Home</h2>
-        <p>This is my Git and GitHub Task 6 project.</p>
-        <button onclick="showMessage()">Click Me</button>
-        <p id="message"></p>
+    <!-- Home section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+            <h1>Hi, I'm <span>Hisham</span></h1>
+            <h2>Aspiring AI/ML Engineer</h2>
+
+            <p class="hero-description">
+                MCA student passionate about Artificial Intelligence,
+                Machine Learning, Python, and building useful software solutions.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View My Projects</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="profile-circle">H</div>
+            <p>AI & ML Enthusiast</p>
+        </div>
     </section>
 
-    <section id="about">
-        <h2>About</h2>
-        <p>I am learning Git, GitHub, branching and deployment.</p>
-    </section>
-	
-<section id="about">
-    <h2>About</h2>
-    <p>I am learning Git, GitHub and website deployment.</p>
-<p>This website demonstrates version control using Git.</p>
-</section>
+    <!-- About section -->
+    <section class="section" id="about">
+        <div class="section-heading">
+            <p>GET TO KNOW ME</p>
+            <h2>About Me</h2>
+        </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: student@example.com</p>
+        <div class="about-content">
+            <div>
+                <h3>Building solutions with technology</h3>
+                <p>
+                    I am an MCA student specializing in Artificial Intelligence
+                    and Machine Learning, with a minor in Data Science.
+                    I enjoy learning new technologies and solving real-world
+                    problems through programming.
+                </p>
+                <p>
+                    My interests include machine learning, natural language
+                    processing, web development, and automation. I am currently
+                    developing my technical skills and looking for opportunities
+                    to learn, contribute, and grow as an engineer.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h3>My Interests</h3>
+                <p>Artificial Intelligence</p>
+                <p>Machine Learning</p>
+                <p>Natural Language Processing</p>
+                <p>Data Science</p>
+                <p>Web Development</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Skills section -->
+    <section class="section skills-section" id="skills">
+        <div class="section-heading">
+            <p>WHAT I WORK WITH</p>
+            <h2>My Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <span>🐍</span>
+                <h3>Python</h3>
+                <p>Programming and problem solving</p>
+            </div>
+
+            <div class="skill-card">
+                <span>🤖</span>
+                <h3>AI & Machine Learning</h3>
+                <p>ML concepts and NLP applications</p>
+            </div>
+
+            <div class="skill-card">
+                <span>🌐</span>
+                <h3>HTML & CSS</h3>
+                <p>Responsive website development</p>
+            </div>
+
+            <div class="skill-card">
+                <span>⚡</span>
+                <h3>JavaScript</h3>
+                <p>Interactive website features</p>
+            </div>
+
+            <div class="skill-card">
+                <span>🗄️</span>
+                <h3>SQL & Databases</h3>
+                <p>Database fundamentals</p>
+            </div>
+
+            <div class="skill-card">
+                <span>🐧</span>
+                <h3>Linux & Git</h3>
+                <p>Command line and version control</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="section" id="projects">
+        <div class="section-heading">
+            <p>MY RECENT WORK</p>
+            <h2>My Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+            <article class="project-card">
+                <div class="project-icon">🎓</div>
+                <h3>EvalAI – Answer Evaluation AI</h3>
+                <p>
+                    An AI-powered educational platform designed to evaluate
+                    student answers using OCR and semantic similarity.
+                    It aims to make answer evaluation faster and more consistent.
+                </p>
+                <div class="tags">
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>React</span>
+                    <span>NLP</span>
+                </div>
+                <a href="https://github.com/Hishamav/answer-evaluation-ai"
+                   target="_blank" rel="noopener noreferrer" class="project-link">
+                    View Project ↗
+                </a>
+            </article>
+
+            <article class="project-card">
+                <div class="project-icon">💻</div>
+                <h3>Student Registration Website</h3>
+                <p>
+                    A web form project for collecting student information
+                    and storing submitted records in a database.
+                </p>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                </div>
+                <a href="#contact" class="project-link">
+                    Learn More →
+                </a>
+            </article>
+
+            <article class="project-card">
+                <div class="project-icon">🔧</div>
+                <h3>Linux Automation Scripts</h3>
+                <p>
+                    Shell scripts for system monitoring, file operations,
+                    scheduled jobs, and database backup tasks on Ubuntu.
+                </p>
+                <div class="tags">
+                    <span>Linux</span>
+                    <span>Bash</span>
+                    <span>Cron</span>
+                </div>
+                <a href="https://github.com/Hishamav"
+                   target="_blank" rel="noopener noreferrer" class="project-link">
+                    GitHub Profile ↗
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Education section -->
+    <section class="section education-section" id="education">
+        <div class="section-heading">
+            <p>MY ACADEMIC BACKGROUND</p>
+            <h2>Education</h2>
+        </div>
+
+        <div class="education-card">
+            <div class="education-dot"></div>
+            <div>
+                <h3>Master of Computer Applications (MCA)</h3>
+                <p>Yenepoya Institute of Arts, Science, Commerce & Management</p>
+                <p class="education-detail">
+                    Focus: Artificial Intelligence & Machine Learning
+                </p>
+                <p class="education-detail">Minor: Data Science</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="section contact-section" id="contact">
+        <div class="section-heading">
+            <p>LET'S CONNECT</p>
+            <h2>Contact Me</h2>
+        </div>
+
+        <p class="contact-description">
+            I am interested in AI/ML opportunities, internships, and
+            collaborating on useful technology projects.
+        </p>
+
+        <div class="contact-links">
+            <!-- Replace with your actual email -->
+            <a href="mailto:your-email@example.com" class="btn">
+                ✉ Email Me
+            </a>
+
+            <a href="https://github.com/Hishamav"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-outline">
+                GitHub ↗
+            </a>
+
+            <!-- Replace with your actual LinkedIn profile URL -->
+            <a href="https://www.linkedin.com/" 
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-outline">
+                LinkedIn ↗
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Created for Task 6</p>
+        <p>© <span id="year"></span> Hisham. Built with HTML, CSS & JavaScript.</p>
     </footer>
 
     <script src="script.js"></script>
